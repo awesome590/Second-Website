@@ -53,6 +53,7 @@ li {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 12px;
 }
 .text--purple {
     color: #6030b1;
@@ -129,6 +130,7 @@ nav {
 }
 .about-me__picture {
     width: 100%;
+    padding: 0 0 0 8px;
 }
 .about-me__info--para {
     font-size: 20px;
@@ -294,4 +296,48 @@ footer {
 .footer__anchor:hover .footer__logo--popper {
     transform: translateX(45px);
     opacity: 1;
+}
+@media (max-width: 768px) {
+    nav {
+        height: 68px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    .about-me__info--para {
+        font-size: 18px;
+    }
+    .project__description--para {
+        font-size: 14px;
+    }
+    .project__description {
+        padding-right: 30px;
+        left: 34px
+    }
+}
+@media (max-width:480px ) {
+    .nav__link:not(:last-child) {
+        display: none;
+    }
+    .project__description {
+        padding: 0;
+        left: 0;
+        width: 100%;
+    }
+    .project__description--para {
+        display: none;
+    }
+    .project__description--links {
+        display: flex;
+        justify-content: center;
+    }
+    .project__description--title {
+        font-size: 32px;
+        line-height: 1;
+        text-align: center;
+    }
+    .project__description--sub-title {
+        text-align: center;
+        margin: 12px 0;
+    }
 }
